@@ -13,6 +13,8 @@
 		DF81676D29CD338500F416E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF81676B29CD338500F416E1 /* Main.storyboard */; };
 		DF81676F29CD338600F416E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF81676E29CD338600F416E1 /* Assets.xcassets */; };
 		DF81677229CD338600F416E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF81677029CD338600F416E1 /* LaunchScreen.storyboard */; };
+		DF81677A29CD34B300F416E1 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DF81677929CD34B300F416E1 /* MobileNetV2.mlmodel */; };
+		DF81677E29CD362B00F416E1 /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF81677D29CD362B00F416E1 /* car.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DF81676E29CD338600F416E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF81677129CD338600F416E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF81677329CD338600F416E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF81677929CD34B300F416E1 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		DF81677D29CD362B00F416E1 /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				DF81676529CD338500F416E1 /* AppDelegate.swift */,
 				DF81676729CD338500F416E1 /* SceneDelegate.swift */,
 				DF81676929CD338500F416E1 /* ViewController.swift */,
+				DF81677D29CD362B00F416E1 /* car.jpg */,
+				DF81677929CD34B300F416E1 /* MobileNetV2.mlmodel */,
 				DF81676B29CD338500F416E1 /* Main.storyboard */,
 				DF81676E29CD338600F416E1 /* Assets.xcassets */,
 				DF81677029CD338600F416E1 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF81677E29CD362B00F416E1 /* car.jpg in Resources */,
 				DF81677229CD338600F416E1 /* LaunchScreen.storyboard in Resources */,
 				DF81676F29CD338600F416E1 /* Assets.xcassets in Resources */,
 				DF81676D29CD338500F416E1 /* Main.storyboard in Resources */,
@@ -140,6 +147,7 @@
 			files = (
 				DF81676A29CD338500F416E1 /* ViewController.swift in Sources */,
 				DF81676629CD338500F416E1 /* AppDelegate.swift in Sources */,
+				DF81677A29CD34B300F416E1 /* MobileNetV2.mlmodel in Sources */,
 				DF81676829CD338500F416E1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,9 +309,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = centennialcollege.ImageRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = centennialcollege.ImageRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
